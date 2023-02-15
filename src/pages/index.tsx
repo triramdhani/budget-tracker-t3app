@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         {/* {JSON.stringify(userAuthenticated)} */}
         <button 
           className="p-2 border border-slate-400 rounded"
-          onClick={login}>LOGIN</button>
+          onClick={()=>signIn()}>LOGIN</button>
       </div>
     </>
   );
