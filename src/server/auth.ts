@@ -52,7 +52,11 @@ export const authOptions: NextAuthOptions = {
     DiscordProvider({
       clientId: env.DISCORD_CLIENT_ID,
       clientSecret: env.DISCORD_CLIENT_SECRET,
+      httpOptions: {
+        timeout: 40000,
+      },
     }),
+    
     /**
      * ...add more providers here
      *
