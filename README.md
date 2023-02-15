@@ -2,3 +2,6 @@
 
 auth 
 https://discord.com/developers/applications/
+
+redirrect
+http://localhost:3000/api/auth/callback/discord

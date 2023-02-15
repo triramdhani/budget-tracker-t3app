@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import { signIn } from "next-auth/react";
 // import Link from "next/link";
 // import { signIn, signOut, useSession } from "next-auth/react";
 
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
       </Head>
       <div>
         Budget-Tracker-3tapp
-        {/* <button onClick={()=>signIn()}>Login</button> */}
+        <button onClick={()=>signIn()}>Login</button>
       </div>
     </>
   );
