@@ -8,9 +8,7 @@ import { signIn  } from "next-auth/react";
 
 const Home: NextPage = () => {
   // const userAuthenticated = useSession()
-  const login = ():void => {
-    ()=>signIn()
-  }
+
   
   return (
     <>
@@ -24,6 +22,7 @@ const Home: NextPage = () => {
         {/* {JSON.stringify(userAuthenticated)} */}
         <button 
           className="p-2 border border-slate-400 rounded"
+          // eslint-disable-next-line @typescript-eslint/no-misused-promises
           onClick={()=>signIn()}>LOGIN</button>
       </div>
     </>
